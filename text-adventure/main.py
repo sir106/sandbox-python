@@ -1,6 +1,19 @@
 from room import Room
 
+print("---------------------------")
+print("Welcome to my Textadventure")
+print("---------------------------")
+print("")
+print("init started...")
+print("")
 kitchen = Room("Kitchen")
-kitchen.set_description("A dank and dirty room buzzing with flies.")
+kitchen.set_description("A dark and dirty room buzzing with flies.")
+print("")
+print("init finised...")
+
 kitchen.describe()
-input("finished - Press Enter to close")
+
+print("-------------")
+print("<--- END --->")
+print("-------------")
+# input("finished - Press Enter to close")
