@@ -1,4 +1,5 @@
 from room import Room
+from character import Character
 
 print("---------------------------")
 print("Welcome to my Textadventure")
@@ -29,11 +30,18 @@ print("init finished...")
 
 current_room = kitchen          
 
+# new character dave
+dave = Character("Dave", "A smelly zombie")
+dave.talk()
+dave.set_conversation("howdy, brother! how you're doing?")
+
+
 while True:		
     print("\n")         
     current_room.get_details()         
     command = input("> ")    
     current_room = current_room.move(command)
+    dave.talk()
 
 print("-------------")
 print("<--- END --->")
