@@ -16,6 +16,7 @@ class Room():
     self.description = room_description
     
   def get_description(self):
+    """Returns a string containing the description of the room"""      
     return self.description
     
   def get_name(self):
